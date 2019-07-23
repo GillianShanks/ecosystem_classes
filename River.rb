@@ -17,4 +17,9 @@ class River
     @fish.delete(fish)
   end
 
+  def bear_hunts(bear, fish)
+    bear.eats_fish(fish)
+    lose_fish(fish)
+  end
+
 end
