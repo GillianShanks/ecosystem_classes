@@ -11,4 +11,8 @@ attr_reader :name, :type
     return @stomach.size
   end
 
+  def roar()
+    return "ROAR!"
+  end
+
 end

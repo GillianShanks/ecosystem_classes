@@ -19,4 +19,8 @@ class BearTest < MiniTest::Test
   def test_stomach_is_empty()
     assert_equal(0, @bear1.food_count())
   end
+
+  def test_bear_roars()
+    assert_equal("ROAR!", @bear1.roar())
+  end
 end
