@@ -15,4 +15,8 @@ attr_reader :name, :type
     return "ROAR!"
   end
 
+  def eats_fish(fish)
+    @stomach << fish
+  end
+
 end

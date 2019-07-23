@@ -2,6 +2,7 @@ require("minitest/autorun")
 require("minitest/rg")
 require_relative("../River.rb")
 require_relative("../Fish.rb")
+require_relative("../Bear.rb")
 
 class RiverTest < MiniTest::Test
 
@@ -12,6 +13,8 @@ class RiverTest < MiniTest::Test
 
     fish = [@fish1, @fish2, @fish3]
     @river1 = River.new("Amazon", fish)
+
+    @bear1 = Bear.new("Yogi", "Grizzly")
   end
 
   def test_can_get_name()
@@ -27,5 +30,6 @@ class RiverTest < MiniTest::Test
   #   @river1.add_fish(@fish2)
   #   assert_equal(5, @river1.fish_count())
   # end
+
 
 end
