@@ -15,4 +15,8 @@ class BearTest < MiniTest::Test
   def test_can_get_type()
     assert_equal("Grizzly", @bear1.type)
   end
+
+  def test_stomach_is_empty()
+    assert_equal(0, @bear1.food_count())
+  end
 end
