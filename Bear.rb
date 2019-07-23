@@ -19,4 +19,5 @@ attr_reader :name, :type
     @stomach << fish
   end
 
+
 end

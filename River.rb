@@ -13,6 +13,8 @@ class River
   # def add_fish(fish)
   #   @fish << fish
   # end
-
+  def lose_fish(fish)
+    @fish.delete(fish)
+  end
 
 end
